@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // 配置请求基础配置
 const ins = axios.create({
-	baseURL: 'http://localhost:3000',
+	baseURL: process.env.BASE_URL,
 	timeout: 5000,
 	headers: {
 		'Content-Type': 'application/json;charset=utf-8'
